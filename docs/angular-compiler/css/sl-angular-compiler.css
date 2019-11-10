@@ -1,0 +1,8 @@
+/* Emphasise text */
+.reveal em {
+    color: rgb(40, 148, 207);
+}
+
+.reveal strong {
+    color: rgb(233, 91, 95);
+}

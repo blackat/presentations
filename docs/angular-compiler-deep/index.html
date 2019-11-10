@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Angular World - Compiler</title>
+
+	<link rel="stylesheet" href="../../css/reveal.css">
+	<link rel="stylesheet" href="../../css/theme/black.css" id="theme">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="../css/hjs-night-owl.css">
+
+	<!-- Custom Styles -->
+	<link rel="stylesheet" href="../css/custom.css">
+	<link rel="stylesheet" href="../css/angular-presentation.css">
+
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400&display=swap" rel="stylesheet">
+
+	<!-- Font-awesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+	 crossorigin="anonymous">
+	</script>
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? '../../css/print/pdf.css' : '../../css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<!-- SLIDE 0 -->
+			<section data-background-color="#1B2C40" class="center">
+				<h1>Angular Deep Cuts</h1>
+				<h3>Angular compiler</h3>
+				<i class="fab fa-angular angular-logo"></i>
+				<p>
+					<small>Crafted with  
+						<i class="fas fa-heart red-heart"></i>
+						by
+						<i class="fab fa-twitter"></i>
+						<a href="https://twitter.com/eugeniolentini" target="_blank">@eugeniolentini</a>
+					</small>
+				</p>
+			</section>
+
+			<!-- SLIDE 1 -->
+			<section data-markdown="md-files/01-angular-compiler-motivations.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+
+			<!-- SLIDE 2 -->
+			<section data-markdown="md-files/02-angular-compilation-steps.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+
+			<!-- SLIDE 3 -->
+			<section data-markdown="md-files/03-compilation-model.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+
+			<!-- SLIDE 4 -->
+			<section data-markdown="md-files/04-compiler-features.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40" class="center">
+			</section>
+
+			<!-- SLIDE 5 -->
+			<section data-markdown="md-files/05-module-compilation-scope.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+
+			<!-- SLIDE 6 -->
+			<section data-markdown="md-files/06-partial-evaluation.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+
+			<!-- SLIDE 7 -->
+			<section data-markdown="md-files/07-template-type-checking.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+
+			<!-- SLIDE 8 -->
+			<section data-markdown="md-files/08-conclusions.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+
+			<!-- SLIDE 9 -->
+			<section data-markdown="md-files/09-references.md" data-separator="^\n---\n" data-separator-vertical="^\n\n" data-separator-notes="^Note:"
+				data-charset="iso-8859-15" data-separator-notes="^Note:" data-background-color="#1B2C40">
+			</section>
+		</div>
+	</div>
+
+	<script src="../../js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			transition: 'fade',
+			center: false,
+
+			menu: {
+				themes: true,
+				themesPath: '../../css/theme/',
+				transitions: true,
+				markers: true,
+				custom: false
+			},
+
+			dependencies: [
+				// Interpret Markdown in <section> elements
+				{ src: '../../plugin/markdown/marked.js' },
+				{ src: '../../plugin/markdown/markdown.js' },
+
+				// Speaker notes
+				{ src: '../../plugin/notes/notes.js', async: true },
+
+				// Syntax highlight for <code> elements
+				{ src: '../../plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+
+				// Fancy embed tweets
+				{ src: '../../plugin/tweet/embed-tweet.js' },
+
+				// Zoom in and out with Alt+click
+				{ src: '../../plugin/zoom-js/zoom.js', async: true },
+
+				// MathJax
+				{ src: '../../plugin/math/math.js', async: true },
+
+				// Fancy menu
+				{ src: '../../plugin/menu/menu.js', async: true}
+			]
+		});
+	</script>
+
+	<script>
+		function resizeIframe(obj) {
+		  obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+		}
+	</script>
+</body>
+
+</html>
