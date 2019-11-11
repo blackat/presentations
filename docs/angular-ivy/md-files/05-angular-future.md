@@ -71,3 +71,8 @@ this.viewContainer.createComponent(this.cfr.resolveComponentFactory(LazyComponen
 - *Metric:* HelloWorld application is ~4.5kB, ~2.7kB with Closure Compiler.
 - *Angular Elements* can be bundled more efficiently.
 - Ivy is ready for future bundler/optimizer.
+
+
+## Enable Ivy
+
+- Run on your project `ng update @angular/cli@next @angular/core@next`
