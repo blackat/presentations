@@ -7,10 +7,10 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
 
-    <title>Custome components solutions</title>
+    <title>Custom components solutions</title>
 
-    <link rel="stylesheet" href="../css/reveal.css" />
-    <link rel="stylesheet" href="../css/theme/black.css" id="theme" />
+    <link rel="stylesheet" href="../../css/reveal.css" />
+    <link rel="stylesheet" href="../../css/theme/black.css" id="theme" />
 
     <!-- Fira Code -->
     <link
@@ -19,12 +19,16 @@
     />
 
     <!-- Theme used for syntax highlighting of code -->
-    <link rel="stylesheet" href="../lib/css/onedark.css" />
+    <link rel="stylesheet" href="../css/hjs-night-owl.css" />
+
+    <!-- Google fonts -->
+	  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400&display=swap" rel="stylesheet">
 
     <!-- Custom Styles -->
-    <link rel="stylesheet" href="../css/custom.css" />
+    <link rel="stylesheet" href="../../css/custom.css" />
 
-    <!-- Fontawsome -->
+    <!-- Font-awesome -->
     <script
       defer
       src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
@@ -38,8 +42,8 @@
       link.rel = 'stylesheet';
       link.type = 'text/css';
       link.href = window.location.search.match(/print-pdf/gi)
-        ? '../css/print/pdf.css'
-        : '../css/print/paper.css';
+        ? '../../css/print/pdf.css'
+        : '../../css/print/paper.css';
       document.getElementsByTagName('head')[0].appendChild(link);
     </script>
   </head>
@@ -130,8 +134,8 @@
         ></section>
     </div>
 
-    <script src="../lib/js/head.min.js"></script>
-    <script src="../js/reveal.js"></script>
+    <script src="../../lib/js/head.min.js"></script>
+    <script src="../../js/reveal.js"></script>
 
     <script>
       // More info about config & dependencies:
@@ -142,26 +146,26 @@
 
         menu: {
           themes: true,
-          themesPath: '../css/theme/',
+          themesPath: '../../css/theme/',
           transitions: true,
           markers: true,
           custom: false
         },
 
         dependencies: [
-          { src: '../plugin/markdown/marked.js' },
-          { src: '../plugin/markdown/markdown.js' },
-          { src: '../plugin/notes/notes.js', async: true },
+          { src: '../../plugin/markdown/marked.js' },
+          { src: '../../plugin/markdown/markdown.js' },
+          { src: '../../plugin/notes/notes.js', async: true },
           {
-            src: '../plugin/highlight/highlight.js',
+            src: '../../plugin/highlight/highlight.js',
             async: true,
             callback: function() {
               hljs.initHighlightingOnLoad();
             }
           },
-          { src: '../plugin/tweet/embed-tweet.js' },
-          { src: '../plugin/zoom-js/zoom.js', async: true },
-          { src: '../plugin/menu/menu.js', async: true }
+          { src: '../../plugin/tweet/embed-tweet.js' },
+          { src: '../../plugin/zoom-js/zoom.js', async: true },
+          { src: '../../plugin/menu/menu.js', async: true }
         ]
       });
     </script>
