@@ -35,7 +35,7 @@
 - At *component level* requires a lot of boilerplate code and some patches.
 
 
-## Lazy Loading Future
+## Lazy Loading Example
 
 ```javascript
 @Component(...)
@@ -57,13 +57,6 @@ export class AppComponent{
 - Click on an image, lazy load the bundle and add the component to the view.
 
 
-## Bundle size
-
-- *Metric:* HelloWorld application is ~4.5kB, ~2.7kB with Closure Compiler.
-- Angular Elements can be bundled more efficiently.
-- Ivy is ready for future bundler/optimizer.
-
-
 ## View Engine Way
 
 ```javascript
@@ -71,3 +64,10 @@ this.viewContainer.createComponent(this.cfr.resolveComponentFactory(LazyComponen
 ```
 
 - Need pass via the `ComponentFactoryResolver` to load the component.
+
+
+## Bundle size
+
+- *Metric:* HelloWorld application is ~4.5kB, ~2.7kB with Closure Compiler.
+- *Angular Elements* can be bundled more efficiently.
+- Ivy is ready for future bundler/optimizer.
