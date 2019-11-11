@@ -11,6 +11,11 @@
     color: rgb(233, 91, 95);
 }
 
+.reveal a {
+    color: rgb(69,190,174);
+    text-decoration-line: underline;
+}
+
 /*********************************
     Code highlight
 *********************************/

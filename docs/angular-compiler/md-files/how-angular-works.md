@@ -71,7 +71,7 @@ In the `tsconfig.json` generate `d.ts` files
 - See instructions *Angular runtime* executes.
 
 
-## Component Defintion
+## Component Definition
 
 ```javascript
 export function View_AppComponent_0(_l) {

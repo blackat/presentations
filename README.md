@@ -14,3 +14,7 @@
 ## Build systems
 
 - [Maven and Grunt build systems](https://blackat.github.io/presentations/docs/build-systems/index.html)
+
+## How to update/deploy reveal.js
+
+- [On GitHub](https://stackoverflow.com/questions/31163633/how-to-host-a-reveal-js-presentation)
