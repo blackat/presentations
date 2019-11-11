@@ -20,6 +20,7 @@
 - The `@angular/core` framework is three-shakeable.
 - View Engine `Map<Component, ComponentFactory>` is not tree-shakable.
 - In Ivy every component **is its own factory**.
+- The framework does *not interpret* a component.
 
 
 ## 2. Incremental Compilation
