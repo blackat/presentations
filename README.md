@@ -5,7 +5,7 @@
 - [Angular bootstrap in deep](https://blackat.github.io/presentations/docs/angular-bootstrap-deep/index.html)
 - [Angular compiler in deep](https://blackat.github.io/presentations/docs/angular-compiler-deep/index.html)
 - [Angular Ivy](https://blackat.github.io/presentations/docs/angular-ivy/index.html)
-- How Angular works
+- [How Angular works](https://blackat.github.io/presentations/docs/angular-runtime-deep/index.html)
 
 ## Testing
 
@@ -14,6 +14,10 @@
 ## Build systems
 
 - [Maven and Grunt build systems](https://blackat.github.io/presentations/docs/build-systems/index.html)
+
+## Web Components
+
+- [LitElements evaluation](https://blackat.github.io/presentations/docs/litelement-galvanize/index.html)
 
 ## How to update/deploy reveal.js
 
