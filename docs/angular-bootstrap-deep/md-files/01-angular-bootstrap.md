@@ -30,7 +30,17 @@ export class AppComponent {
   - *Execute application code.*
 
 
-## Boostrap sequence
+## Incremental DOM
+
+>Every component gets compiled into a series of instructions.
+>These instructions create DOM trees and update them in-place when the data changes.
+
+- [Fast](http://google.github.io/incremental-dom/#why-incremental-dom) **view creation** and **change detection**.
+- [Better](https://medium.com/google-developers/introducing-incremental-dom-e98f79ce2c5f) *bundle size* and *memory footprint*.
+- Other technique then Virtual DOM.
+
+
+## Bootstrap Sequence
 
 <img src="./images/angular-platform.png" width="45%">
 
