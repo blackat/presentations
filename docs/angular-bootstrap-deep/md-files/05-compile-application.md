@@ -112,6 +112,7 @@ export function View_AppComponent_0(_l) {
 
 - Part of the *runtime*.
 - Require importing `.ngfactory` files to use `NgModuleFactory`.
+- Create/update logic is in the VE.
 - Execute what produced by the compiler.
 - It is not *three-shakeable*.
 - Ivy will replace the View Engine.

@@ -6,3 +6,4 @@
 - Lazy import of components.
 - Libraries public API.
 - AoT can be used in development.
+- Each component knows how ot self-update/create.
