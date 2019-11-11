@@ -27,11 +27,11 @@
 
 ```javascript
 export function View_AppComponent_Host_0(_l) {
-  return i1.ɵvid(
+  return i1.ovid(
     0,
     [
-      (_l()(),i1.ɵeld(0,0,null,null,1,"app-root",[],null,null,null,View_AppComponent_0,RenderType_AppComponent)),
-      i1.ɵdid(1, 49152, null, 0, i2.AppComponent, [], null, null)
+      (_l()(),i1.oeld(0,0,null,null,1,"app-root",[],null,null,null,View_AppComponent_0,RenderType_AppComponent)),
+      i1.odid(1, 49152, null, 0, i2.AppComponent, [], null, null)
     ],
     null,
     null
