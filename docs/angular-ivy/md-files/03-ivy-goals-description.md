@@ -9,7 +9,7 @@
 ## Ivy is Tree-shakeable
 
 - Ivy is designed to be tree-shaken by optimizers.
-- If application does not require internationalization Angular compiler
+- If application does not require *internationalization*, Angular compiler
   - not emit those instructions;
   - not include them into the bundle.
 
@@ -20,13 +20,6 @@
 - The `@angular/core` framework is three-shakeable.
 - View Engine `Map<Component, ComponentFactory>` is not tree-shakable.
 - In Ivy every component **is its own factory**.
-
-
-## Bundle size
-
-- *Metric:* HelloWorld application is ~4.5kB, ~2.7kB with Closure Compiler.
-- Angular Elements can be bundled more efficiently.
-- Ivy is ready for future bundler/optimizer.
 
 
 ## 2. Incremental Compilation
@@ -72,5 +65,3 @@
 - No `.ngfactory` complications.
 - Lazy loading without a router.
 - Dynamic import and deployment.
-
-// add lazy import
