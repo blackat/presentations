@@ -19,6 +19,7 @@
 
 - [LitElements evaluation](https://blackat.github.io/presentations/docs/litelement-galvanize/index.html)
 - [Polymer evaluation](https://blackat.github.io/presentations/docs/polymer-galvanize/index.html)
+- [Angular Elements](https://blackat.github.io/presentations/docs/angular-elements-galvanize/index.html)
 - [Custom component solutions comparison](https://blackat.github.io/presentations/docs/custom-components-solutions/index.html)
 
 ## How to update/deploy reveal.js
