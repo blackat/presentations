@@ -39,8 +39,7 @@ export class AppComponent {
   - Type check application code.
   - Emit JS *Angular runtime* can execute.
 
-
-## Invoke ngc
+## Runtime Code
 
 In `package.json` add
 
@@ -65,7 +64,7 @@ In the `tsconfig.json` generate `d.ts` files
 - See instructions *Angular runtime* executes.
 
 
-## Component Definition
+## Component Definition (View Engine)
 
 ```javascript
 export function View_AppComponent_0(_l) {
@@ -83,7 +82,6 @@ export function View_AppComponent_0(_l) {
 
 - `@angular/compiler` generates instructions *Angular runtime* can understand.
 - *Angular runtime* implements those instructions to run the application.
-
 
 ## Full Bootstrap Sequence
 
@@ -143,7 +141,7 @@ export { AppComponentNgFactory };
 - `directiveInject` powers DI looking for services to inject from directive till `providers` module injectors.
 
 
-## Component Defintion
+## Component Definition (Ivy)
 
 <pre><code class="hljs" data-line-numbers="5-11" data-trim data-noescape>
 class AppComponent {...}
@@ -233,7 +231,7 @@ LView[<h1>, #txt, ..., *directives]
 
 ## Template View (TView)
 
-- Directive maching, `ngFor`, `ngIf`, happens once per component.
+- Directive matching, `ngFor`, `ngIf`, happens once per component.
 - Created per *component type*.
 - Share data among all instances of a view.
 - A component with 5 instances has 5 LView and 1 TView.
@@ -255,15 +253,11 @@ TView[TNode, TNode, TNode, HelloCard.def]
 - Example: `<hello-card>` is created the first time, then
   - it looks for the TNode,
   - TNode will point to the definition (`HelloCard.def`)
-  - it can instatiate immediately instantiate without matching.
+  - it can instantiate immediately instantiate without matching.
 
 
 ## Change Detection
 
-Process where binded value are checked and new values are rendered to the view.
-
-
-## How It Works
-
+- Process where binding value are checked and new values are rendered to the view.
 - Similar to component creation.
 - Invoke all the template functions down the component tree using the *update flag*.
