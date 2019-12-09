@@ -1,11 +1,11 @@
-## Ivy enables lazy loading
+## Ivy Enables Lazy Loading
 
 - Ivy is not just about improving the built time and the size.
 - Since version 2, component lazy loading just at *router level*. 
 - At *component level* requires a lot of boilerplate code and some patches.
 
 
-## Lazy loading example
+## Lazy Loading Example (ideally)
 
 ```javascript
 @Component(...)
@@ -27,7 +27,7 @@ export class AppComponent{
 - Click on an image, lazy load the bundle and add the component to the view.
 
 
-## View Engine way
+## View Engine Why
 
 ```javascript
 this.viewContainer.createComponent(

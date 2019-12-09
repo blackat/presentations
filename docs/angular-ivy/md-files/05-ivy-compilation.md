@@ -21,7 +21,7 @@ $ ng build  // aot activated by default
 ```
 
 
-## Compiled component
+## Compiled Component
 
 ```javascript
 AppComponent.ngComponentDef = defineComponent({
@@ -45,7 +45,7 @@ AppComponent.ngComponentDef = defineComponent({
 - Compiled code is into static fields.
 
 
-## Knowns at compile time
+## Knowns at Compile Time
 
 <img src="images/incremental-dom.png" alt="Virtual DOM" width="75%"/>
 

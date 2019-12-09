@@ -1,13 +1,3 @@
-## Virtual DOM
-
-<img src="images/virtual-dom.png" alt="Virtual DOM" width="75%"/>
-
-- A JSON object gets manipulated when node added/removed.
-- *Diff* algo: transformation sequence for the DOM.
-- Msemory footprint, new tree at each change.
-- Whole interpreter shipped to the browser.
-
-
 ## Incremental DOM
 
 - Component decorator/template compiled into two *instruction sequences*:
@@ -40,3 +30,12 @@ export function View_AppComponent_0(_l) {
 - *View creation* and *change detection*.
 - View Engine can execute it.
 
+
+## Virtual DOM
+
+<img src="images/virtual-dom.png" alt="Virtual DOM" width="75%"/>
+
+- A JSON object gets manipulated when node added/removed.
+- *Diff* algo: transformation sequence for the DOM.
+- Msemory footprint, new tree at each change.
+- Whole interpreter shipped to the browser.

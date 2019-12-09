@@ -57,19 +57,19 @@ export declare class MylibComponent implements OnInit {
 - Ivy compiler relies safely on the public API.
 
 
-## Input property
+## Input Property
 
 <img src="images/input-property.png" alt="Input property" width="85%"/>
 
 
-## 3. Incremental compilation
+## 3. Incremental Compilation
 
 - `ng build prod` runs `tsc` and `ngc` which generates `ngfactories` for templates.
 - `ngc` compiles *application libraries* as well.
 - **Incremental compilation** enables libraries to be compiled and deployed on npm.
 
 
-## 4. Ivy flexibility
+## 4. Ivy Flexibility
 
 - If new *features* are introduced in Angular
   - new *instructions* are implemented in the set.

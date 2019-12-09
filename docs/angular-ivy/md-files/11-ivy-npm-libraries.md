@@ -1,4 +1,4 @@
-## Libraries compiler
+## Libraries Compiler
 
 - The compilation of an Angular application is just half of the process.
 - Libraries, the application depends on, have to be compatible with the *new runtime*.
@@ -28,7 +28,7 @@
 - `ngcc-validation` [project](https://github.com/angular/ngcc-validation) to validate compatibilities.
 
 
-## Bundle size
+## Bundle Size
 
 - *Metric:* HelloWorld application is ~4.5kB, ~2.7kB with Closure Compiler.
 - *Angular Elements* can be bundled more efficiently.
