@@ -18,6 +18,7 @@ export class AppComponent {
 
 ```bash
 $ ng build  // aot activated by default
+$ ng serve  // aot activated by default
 ```
 
 
@@ -42,7 +43,6 @@ AppComponent.ngComponentDef = defineComponent({
 ```
 
 - Decorators get compiled into **static fields**.
-- Compiled code is into static fields.
 
 
 ## Knowns at Compile Time

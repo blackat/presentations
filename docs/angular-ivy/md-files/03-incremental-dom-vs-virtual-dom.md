@@ -37,5 +37,5 @@ export function View_AppComponent_0(_l) {
 
 - A JSON object gets manipulated when node added/removed.
 - *Diff* algo: transformation sequence for the DOM.
-- Msemory footprint, new tree at each change.
+- Memory footprint, new tree at each change.
 - Whole interpreter shipped to the browser.
