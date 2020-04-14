@@ -10,11 +10,10 @@
 export class AppModule {}
 ```
 
+- **Module compilation scope** is the `declarations` properties.
+- Angular components used in the templates.
 - Developer uses a selector from a library.
-- Compiler has to *uniquely* match the component.
-- `NgModule` holds component declarations usable in app templates.
-- **Module compilation scope** is this set of components.
-
+- Compiler can *uniquely* match the component.
 
 
 ## Export compilation scope
@@ -29,6 +28,7 @@ export class HelloModule {}
 
 - The `HelloComponent` is in a module.
 - The module makes available a set of components.
+- The `Hello` module library implements one component and exports it to the rest of the world.
 
 
 ## Module and export scope

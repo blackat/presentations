@@ -1,11 +1,45 @@
+## TypeScript transpiler architecture
+
+```bash
+                                                                |------------|
+                           |----------------------------------> | TypeScript |
+                           |                                    |   .d.ts    |
+                           |                                    |------------|
+                           |
+|------------|          |-----|               |-----|           |------------|
+| TypeScript | -parse-> | AST | ->transform-> | AST | ->print-> | JavaScript |
+|   source   |    |     |-----|       |       |-----|           |   source   |
+|------------|    |        |          |                         |------------|
+                  |    type-check     |
+                  |        |          |
+                  |        v          |
+                  |    |--------|     |
+                  |--> | errors | <---|
+                       |--------|
+```
+
+- **parse:** recursive descendent parse producing the AST.
+- **type check:** type analysis on files.
+- **AST to AST:** remove type declarations etc.
+
+
+## TSC extension points
+
+- Extensions points to alter compiler output.
+- `CompilerHost.getSourceFile` to modify the source.
+- `CustomTransformers` to alter the list of transforms.
+- `WriteFileCallback` to intercept the output before it is written.
+
+
 ## Compilation steps
 
 ![alt text](./images/compiler-steps.png)
 
 - *TypeScript compiler* has 3 steps.
-- Angular compiler `ngc` is built on top.
-- Add 2 more steps (import `ngfactory`).
-- *Angular compiler add generated template TypeScript code.*
+- Angular compiler
+  - `ngc` is built on top;
+  - kicks in to reify Angular decorators into static properties;
+  - allows the code written in Angular declarative syntax to participate to the TypeScript compilation process.
 
 
 ## Program Creation
@@ -14,7 +48,7 @@
 
 - TypeScript *process* to discover app source files.
 - Start from `tsconfig.json`
-- Use `import` to discover all the other files.
+- Use `import` statements to discover all the other files.
 
 
 ## Analysis
