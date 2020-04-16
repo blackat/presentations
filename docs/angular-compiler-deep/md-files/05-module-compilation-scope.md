@@ -13,6 +13,7 @@ export class AppModule {}
 - Developer uses a selector from a library.
 - Compiler can _uniquely_ match the component.
 
+
 ## Export compilation scope
 
 ```javascript
@@ -26,6 +27,7 @@ export class HelloModule {}
 - The `HelloComponent` is _in_ a module.
 - The module makes available a set of components.
 - The `Hello` module library implements one component and exports it to the rest of the world.
+
 
 ## Module and export scope
 
