@@ -16,7 +16,8 @@ import {SOME_MODULES} from './some_module';
 ```
 
 - Angular compiler contains almost a complete *TypeScript interpreter*.
-- *Partial evaluation* compiler can *follow/evaluate* import references.
+- *Partial evaluation* compiler can *follow/evaluate* `import` references.
+- Some evaluation are just partial since there are not enough information at compiler time.
 
 
 ## Something that does not exist
@@ -31,14 +32,14 @@ import {SOME_MODULES} from './some_module';
 
 ```javascript
 export const SOME_MODULES = {
-    modules: [HelloModule, ByeModule],
+  modules: [HelloModule, ByeModule],
 
-    // not available at compile time
-    viewportSize: {
-        x: document.body.scrollWidth,
-        y: document.body.scrollHeight
-    }
-}
+  // not available at compile time
+  viewportSize: {
+    x: document.body.scrollWidth,
+    y: document.body.scrollHeight,
+  },
+};
 ```
 
 - Some values are only available *at runtime*.
@@ -59,6 +60,7 @@ SOME_MODULES: {
 }
 ```
 
+- Compiler sees the previuos properties as *dynamic expressions*.
 - `SOME_MODULES` an object with 2 properties.
 - `DynamicValue` is an indicator to say *cannot get past*.
 
@@ -78,5 +80,5 @@ import {SOME_MODULES} from './some_module'
 
 - Compilation
   - goes on for `modules` properties;
-  - *do not work* for `viewportSize`, the value cannot figured out;
+  - _do not work_ for `viewportSize`, the value cannot figured out;
   - an explicative error message is produced about styles.

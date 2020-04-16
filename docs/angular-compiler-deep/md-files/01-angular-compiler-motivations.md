@@ -81,7 +81,7 @@ With Ivy enabled `ngtsc` behaves like `ngc`.
 
 ```javascript
 AppComponent.0fac = function AppComponent_Factory(t) { return new (t || AppComponent)(); };
-AppComponent.0cmp = i0.00defineComponent({ 
+AppComponent.0cmp = i0.00defineComponent({
   type: AppComponent, selectors: [["app-root"]],
   inputs: { title: "title" }, decls: 3, vars: 1, consts: [[2, "text-align", "center"]],
   template: function AppComponent_Template(rf, ctx) { if (rf & 1) {

@@ -6,7 +6,7 @@
 </account-view
 ```
 
-- Template are written in HTML.
+- Template are written in Angular template syntax.
 - Templates and expressions are transformed into **type check blocks**, blocks of TypeScript code.
 - Block are sent to TypeScript compiler.
 - Returned errors are presented in the context of the template.
@@ -30,3 +30,27 @@ fucntion typeCheckBlock(ctx: AppComponent) {
 - Translated code plus *offset comments*.
 - Offsets allow to return the error in the context of the HTML template.
 - Ivy has improved the error contextualization even in external templates.
+
+
+## Example ngc
+
+```javascript
+...
+"angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictTemplates": true,
+    ...
+}
+```
+
+```javascript
+src/app/app.component.html:7:13 - error NG2339: Property 'name' does not exist on type 'string'.
+
+7       <td>{{hero.name}}</td>
+              ~~~~~~~~~
+
+  src/app/app.component.ts:5:16
+    5   templateUrl: './app.component.html',
+                     ~~~~~~~~~~~~~~~~~~~~~~
+    Error occurs in the template of component AppComponent.
+```
